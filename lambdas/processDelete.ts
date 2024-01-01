@@ -17,7 +17,6 @@ export const handler: SNSHandler = async (event) => {
             const srcKey = decodeURIComponent(s3e.object.key.replace(/\+/g, " "));
 
             const deleteCommand = new DeleteCommand({
-            //process.env.TABLE_NAME,
               TableName: "Images",
               Key: {
                 ImageName: srcKey,
