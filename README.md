@@ -1,26 +1,24 @@
-EDA Assignment - Distributed Systems.
-Name: Kedaranath Ambekar
+## EDA Assignment - Distributed Systems.
 
-Student Number: 20091631
+__Name:__ Kedaranath Ambekar
 
-YouTube Demo link - [The URL of your demonstration of the app.]
+__YouTube Demo link__ - [The URL of your demonstration of the app.]
 
 
-Phase 1.
 
-Confirmation Mailer - Fully implemented.
+### Phase 1.
 
-Rejection Mailer - Fully implemented.
 
-Process Image - Fully implemented
++ Confirmation Mailer - Fully implemented.
++ Rejection Mailer - Fully implemented.
++ Process Image - Fully implemented
 
-Phase 2.
-Confirmation Mailer - Fully implemented.
+### Phase 2.
 
-Rejection Mailer - Fully implemented.
++ Confirmation Mailer - Fully implemented.
++ Rejection Mailer - Fully implemented.
++ Process Image - Fully implemented
++ Process Delete - Fully implemented.
 
-Process Image - Fully implemented.
 
-Process Delete - Fully implemented.
 
-aws s3 cp test.txt s3://a-bucket/test.txt --metadata '{"x-amz-meta-cms-id":"34533452"}'
