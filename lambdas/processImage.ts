@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions, import/no-absolute-path */
 import { SQSHandler } from "aws-lambda";
-// import { sharp } from "/opt/nodejs/sharp-utils";
+
 import {
   GetObjectCommand,
   PutObjectCommandInput,
@@ -25,13 +25,13 @@ export const handler: SQSHandler = async (event) => {
         const srcBucket = s3e.bucket.name;
         // Object key may have spaces or unicode non-ASCII characters.
         const srcKey = decodeURIComponent(s3e.object.key.replace(/\+/g, " "));
-        // Infer the image type from the file suffix.
+       
         const typeMatch = srcKey.match(/\.([^.]*)$/);
         if (!typeMatch) {
           console.log("Could not determine the image type.");
           throw new Error("Could not determine the image type. ");
         }
-        // Check that the image type is supported
+        
         const imageType = typeMatch[1].toLowerCase();
         if (imageType != "jpeg" && imageType != "png") {
           console.log(`Unsupported image type: ${imageType}`);
