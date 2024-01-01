@@ -20,5 +20,5 @@ __YouTube Demo link__ - [The URL of your demonstration of the app.]
 + Process Image - Fully implemented
 + Process Delete - Fully implemented.
 
-
+aws s3 cp test.txt s3://a-bucket/test.txt --metadata '{"x-amz-meta-cms-id":"34533452"}'
 
