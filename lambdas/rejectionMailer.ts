@@ -22,7 +22,7 @@ export const handler: SQSHandler = async (event: any) => {
         const srcKey = decodeURIComponent(s3e.object.key.replace(/\+/g, " "));
 
         try {
-          const message = `Your image: ${srcKey} has been rejected due to an invalid type. Its URL is s3://${srcBucket}/${srcKey}`;
+          const message = ` Image: ${srcKey} has been rejected because of the wrong formate the image support only (.jpeg or .png). Its URL is s3://${srcBucket}/${srcKey}`;
           await sendRejectionEmail(message);
         } catch (error: unknown) {
         console.log("Rejection email sent");
@@ -46,7 +46,7 @@ async function sendRejectionEmail(message: string) {
       },
       Subject: {
         Charset: "UTF-8",
-        Data: `Image Upload Rejected`,
+        Data: `Image Rejection`,
       },
     },
     Source: SES_EMAIL_FROM,
