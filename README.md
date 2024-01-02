@@ -18,7 +18,7 @@ __YouTube Demo link__ - https://youtu.be/bmy83RDTOtQ
 + Confirmation Mailer - Fully implemented.
 + Rejection Mailer - Fully implemented.
 + Process Image - Fully implemented
-+ Process Delete - Fully implemented.
++ Process Delete - Partially implemented.
 
 aws s3 cp test.txt s3://a-bucket/test.txt --metadata '{"x-amz-meta-cms-id":"34533452"}'
 
